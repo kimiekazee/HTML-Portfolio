@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Quicksand;
+}
+
+/* ----  NAVIGATION  ---- */
+
+nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbox {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-box {
+  display: flex;
+  width: 600px;
+  height: 70px;
+  margin: 20px 0 0 20px;
+}
+
+nav ul {
+  width: 300px;
+  margin: 35px 0 0 300px;
+  font-size: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0 0 22px;
+  color: #1e1e1e;
+}
+
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: orangered;
+}
+
+nav ul li a:hover {
+  color: darkred;
+}
+
+/*
+nav ul li a:visited {
+  color: gray;
+}
+*/
+
+.logo-box {
+  width: 300px;
+  height: 70px;
+  margin: 20px 0 0 0;
+}
+
+.my-logo {
+  width: 150px;
+  margin: 12px 0 0 0;
+}
+
+/* ----  TOP BAR SHADOW ---- */
+.navbar-shadow {
+  position: relative;
+  box-shadow: 0 1px 5px rgba(9, 9, 9, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow:before,
+.shadow:after {
+  content: "";
+  position: relative;
+  z-index: -1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px / 10px;
+}
+
+/* ----  MAIN STRIP  ---- */
+
+#main-strip {
+  float: left;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.strip-box {
+  float: left;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  height: 500px;
+
+  background-color: none;
+}
+
+.b1 {
+  width: 300px;
+  margin: 70px 0 0 0;
+}
+
+.b2 {
+  width: 555px;
+  margin: 70px 0 0 30px;
+}
+
+/* ----- MAIN IMAGE -----*/
+
+.myPhoto {
+  width: auto;
+  height: 500px;
+}
+
+/* ----- MAIN COPY -----*/
+
+.box {
+  background-color: none;
+  color: none;
+}
+
+.main-copy {
+  margin: 40px 0 0 0;
+  color: #1e1e1e;
+}
+
+.header {
+  font-size: 50px;
+}
+
+.subhead {
+  font-family: Abel;
+  font-size: 22px;
+  letter-spacing: 0.3rem;
+  margin: 0 0 30px 0;
+  color: orangered;
+}
+
+.body-copy {
+  font-size: 15px;
+  line-height: 2rem;
+  padding: 0 0 15px 0;
+}
+
+/* -----  FOOTER -----*/
+
+footer {
+  background-color: orangered;
+  float: left;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerbox {
+  float: left;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.author-box {
+  width: 200px;
+  height: 30px;
+  margin: 20px 0 0 0px;
+}
+
+.author {
+  width: 150px;
+  margin: 5px 0 0 0px;
+  color: white;
+}
+
+.sm-box {
+  width: 150px;
+  height: 30px;
+  margin: 20px 0 0 20px;
+}
+
+.socialmedia {
+  width: 120px;
+  margin: 5px 0 0 30px;
+  font-size: 15px;
+  letter-spacing: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-box, .strip-box, .footerbox {
+    width: 100%; 
+  }
